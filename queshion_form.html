@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Interview</title>
+</head>
+
+<body>
+	<header>
+		<h1>Опрос</h1>
+		<nav>
+			<a href="index.html">Вернуться на TRENDS ART</a>
+		</nav>
+		<br>
+	</header>
+		<main>
+			<form action="https://formspree.io/mjvazjgj" method="POST">
+				<label>
+	           Введите ваше имя:
+	           <input type="text" name="name" placeholder="Имя" required>
+	        </label>
+				<br>
+				<label>
+	           Введите сколько вам лет:
+	           <input type="number" name="age" placeholder="Возраст" min="5" max="80" required>
+	        </label>
+				<br>
+				<label>Ваша стать:</label>
+				<label>
+                   <input type="radio" name="gander" value="male">Мужчина
+            </label>
+				<label>
+                 <input type="radio" name="gander" value="female">Женщина
+            </label>
+				<fieldset>
+					<legend>Виды живописи какие вам нравятся?</legend>
+					<div>
+						<input type="checkbox" name="easel_painting" value="easel_painting">
+						<label for="easel_painting">Станковая живопись</label>
+					</div>
+					<div>
+						<input type="checkbox" name="monumental_painting" value="monumental_painting">
+						<label for="monumental_painting">Монументальная живопись</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Жанры живописи какие вам нравятся?</legend>
+					<div>
+						<input type="checkbox" name="portrait" value="portrait">
+						<label for="portrait">Портрет</label>
+					</div>
+					<div>
+						<input type="checkbox" name="landscape" value="landscape">
+						<label for="landscape">Пейзаж</label>
+					</div>
+					<div>
+						<input type="checkbox" name="still_life" value="still_life">
+						<label for="still_life">Натюрморт</label>
+					</div>
+				</fieldset>
+				<p></p>
+				<label for="appraisal">Оцените наш сайт от 1 до 10</label>
+
+				<input type="number" name="appraisal" min="0" max="10">
+				<br>
+
+				<label for="photo">Можете отправить нам картину которая вам очень нравиться</label>
+				<input type="file" name="photo" accept="image/png, image/jpeg">
+				<br>
+				<br>
+				<input type="submit">
+				<input type="reset">
+		</form>
+		</main>
+</body>
+</html>
